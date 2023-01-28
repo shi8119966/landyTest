@@ -23,7 +23,7 @@ int main()
         << std::get<0>(t) << ", " << std::get<1>(t) << ", "
         << std::get<2>(t) << ", " << std::get<3>(t) << ", "
         << std::get<4>(t) << ")\n";
-    // 由于get返回指定元素的引用，所以可用来修改指定位置的元素的值。此处因为第4个元素是引用类型，所以被引用的值也会改变
+  
     std::get<3>(t) = 9;
     std::cout << "4 value = " << std::get<4>(t) << endl << "3 value = " << std::get<3>(t) << endl;
 
