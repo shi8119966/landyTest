@@ -14,11 +14,9 @@ int main()
 #else
     bool a = false;
 #endif
-
-    std::cout << "Hello World! a = "  << a << "\n";
     int n = 1;
     auto t = std::make_tuple(10, "Test", 3.14, std::ref(n), n);
-    // get尖括号中的值必须是一个整型常量表达式。从0开始计数，意味着get<0>是第一个成员。
+   
     std::cout << "The value of t is " << "("
         << std::get<0>(t) << ", " << std::get<1>(t) << ", "
         << std::get<2>(t) << ", " << std::get<3>(t) << ", "
