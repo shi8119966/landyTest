@@ -4,3 +4,4 @@
 !*.cpp 
 !*.sln 
 !*.vcxproj
+!*.vcxproj.filters
